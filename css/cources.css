@@ -1,0 +1,53 @@
+#cources-data .cource {
+  background-color: white;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  width: fit-content;
+  max-width: 400px;
+}
+#cources-data .cource:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 30%);
+}
+#cources-data .cource .team-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#cources-data .cource .cource-img img {
+  max-width: 100%;
+}
+
+#cources-data .cource .info {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  position: relative;
+  min-height: 127px;
+}
+
+@media (max-width: 767px) {
+  #cources-data .cource .info {
+    text-align: center;
+  }
+}
+
+#cources-data .cource .info span {
+  position: absolute;
+  background-color: var(--blue-color);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-align: center;
+}

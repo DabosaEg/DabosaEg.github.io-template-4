@@ -1,0 +1,183 @@
+/* Start Site Control */
+#setting-data .siteControl .relativeH2 h2::after {
+  content: "Control The Website If There Is Maintenance";
+}
+#setting-data .siteControl textarea {
+  border: 1px solid #ccc;
+}
+/* End Site Control */
+
+/* Start General Info */
+#setting-data .generalInfo .relativeH2 h2::after {
+  content: "General Information About Your Account";
+}
+#setting-data .generalInfo input {
+  border: 1px solid #ccc;
+}
+#setting-data .generalInfo #setting-email {
+  cursor: no-drop;
+  width: calc(100% - 75px);
+}
+/* End General Info */
+
+/* Start Security Info */
+#setting-data .securityInfo .relativeH2 h2::after {
+  content: "Security Information About Your Account";
+}
+
+#setting-data .securityInfo div:nth-of-type(2),
+#setting-data .securityInfo div:nth-of-type(3) {
+  border-bottom: 1px solid #eee;
+}
+
+/* End Security Info */
+
+/* Start Social Info */
+#setting-data .socialInfo .relativeH2 h2::after {
+  content: "Social Media Information";
+}
+
+#setting-data .socialInfo div:not(:first-of-type) {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+#setting-data .socialInfo i {
+  background-color: #f6f6f6;
+  border-radius: 6px 0px 0px 6px;
+  width: 40px;
+  height: 40px;
+  border-right: 1px solid #ddd;
+  color: var(--grey-color);
+  transition: 0.3s;
+}
+#setting-data .socialInfo input {
+  background-color: #f6f6f6;
+  border-radius: 0px 6px 6px 0px;
+  height: 40px;
+}
+#setting-data .socialInfo div:not(:first-of-type):focus-within i {
+  color: black;
+}
+/* End Social Info */
+
+/* Start Widget Control */
+#setting-data .widgetControl .relativeH2 h2::after {
+  content: "Show/Hide Widgets";
+}
+#setting-data .widgetControl input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+#setting-data .widgetControl label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+#setting-data .widgetControl label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: white;
+  border: 2px solid #888;
+  border-radius: 6px;
+  margin-right: 10px;
+  left: 0;
+  transition: 0.3s;
+}
+#setting-data .widgetControl label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--blue-color);
+  border: 2px solid var(--blue-color);
+  border-radius: 6px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  color: white;
+  transition: 0.3s;
+  transform: scale(0) rotate(360deg);
+}
+#setting-data .widgetControl input:hover + label::before {
+  border: 2px solid var(--blue-color);
+}
+
+#setting-data .widgetControl input:checked + label::after {
+  transform: scale(1);
+}
+
+/* End Widget Control */
+
+/* Start Backup Manager */
+#setting-data .backup .relativeH2 h2::after {
+  content: "Control Backup Time And Location";
+}
+
+#setting-data .backup .plan input {
+  appearance: none;
+  display: none;
+}
+#setting-data .backup .plan label {
+  position: relative;
+  padding-left: 30px;
+}
+#setting-data .backup .plan label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 2px solid #ddd;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#setting-data .backup .plan label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+#setting-data .backup .plan input:checked + label::before {
+  border: 2px solid var(--blue-color);
+}
+#setting-data .backup .plan input:checked + label::after {
+  background-color: var(--blue-color);
+}
+
+#setting-data .backup .servers {
+  border-top: 2px solid #eee;
+}
+#setting-data .backup .servers div {
+  border: 2px solid #eee;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  #setting-data .backup .servers {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+#setting-data .backup .servers div.checked {
+  color: var(--blue-color);
+  border: 2px solid var(--blue-color);
+  font-weight: bold;
+}
+/* End Backup Manager */

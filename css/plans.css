@@ -1,0 +1,39 @@
+#plans-data .plan .plan-name {
+  text-align: center;
+  padding: 20px;
+  outline: 3px solid var(--green-color);
+  border: 3px solid white;
+}
+#plans-data .plan .plan-name.blue {
+  outline: 3px solid var(--blue-color);
+}
+#plans-data .plan .plan-name.orange {
+  outline: 3px solid var(--orange-color);
+}
+
+#plans-data .plan .plan-name .price {
+  font-size: 40px;
+  position: relative;
+  margin: auto;
+  width: fit-content;
+}
+#plans-data .plan .plan-name .price span {
+  position: absolute;
+  font-size: 26px;
+  font-weight: normal;
+  left: -20px;
+  top: -5px;
+}
+
+#plans-data .plan ul li {
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+#plans-data .plan ul li i:first-child {
+  font-size: 18px;
+}
+#plans-data .plan ul li i:last-child {
+  margin-left: auto;
+  cursor: pointer;
+}

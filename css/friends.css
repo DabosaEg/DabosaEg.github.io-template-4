@@ -1,0 +1,37 @@
+#friends-data .friend .contact {
+  position: absolute;
+}
+#friends-data .friend .contact i {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  color: #666;
+  transition: 0.3s;
+  font-size: 13px;
+}
+#friends-data .friend .contact i:hover {
+  color: white;
+  background-color: var(--blue-color);
+}
+
+#friends-data .friend .contact-info img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+#friends-data .friend .stats {
+  padding: 15px 0;
+  margin: 15px 0;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+#friends-data .friend .stats .vip {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--orange-color);
+  opacity: 0.3;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

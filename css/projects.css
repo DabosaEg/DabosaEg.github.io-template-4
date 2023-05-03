@@ -1,0 +1,87 @@
+#projects-data .project .date {
+  color: var(--grey-color);
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+#projects-data .project .pro-team {
+  margin: 20px 0;
+  min-height: 80px;
+  position: relative;
+}
+#projects-data .project .pro-team img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#projects-data .project .pro-team img:nth-child(1) {
+  left: 0;
+}
+#projects-data .project .pro-team img:nth-child(2) {
+  left: 30px;
+}
+#projects-data .project .pro-team img:nth-child(3) {
+  left: 60px;
+}
+#projects-data .project .pro-team img:nth-child(4) {
+  left: 90px;
+}
+#projects-data .project .pro-team img:nth-child(5) {
+  left: 120px;
+}
+#projects-data .project .pro-team img:hover {
+  z-index: 100;
+}
+
+#projects-data .project .pro-work {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+#projects-data .project .pro-work span {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+#projects-data .project .pro-status {
+  position: relative;
+}
+#projects-data .project .pro-status span {
+  text-align: end;
+  display: block;
+  font-size: 14px;
+  color: var(--grey-color);
+  padding: 20px 0;
+}
+#projects-data .project .pro-status::before,
+#projects-data .project .pro-status::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  width: 260px;
+  background-color: #eee;
+}
+#projects-data .project .pro-status::after {
+  width: calc((260px * 80) / 100);
+
+  /* var(--background) is not color but to be changed later using JS file */
+  background-color: var(--background);
+}

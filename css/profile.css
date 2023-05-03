@@ -1,0 +1,114 @@
+/* Start General Info */
+
+.generalInfo .profilePic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.generalInfo .general:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.generalInfo .general:hover {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.generalInfo .rating::before,
+.generalInfo .rating::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 5px;
+  background-color: #eee;
+  left: 15px;
+  top: 0;
+  border-radius: 6px;
+}
+.generalInfo .rating::after {
+  width: calc(70% - 30px);
+  background-color: var(--blue-color);
+}
+.generalInfo .userInfo p {
+  min-width: 250px;
+  font-size: 14px;
+}
+.generalInfo .userInfo > div {
+  min-width: 250px;
+}
+.generalInfo .userInfo .toggle-switch {
+  height: 20px;
+  width: 78px;
+}
+.generalInfo .userInfo .toggle-switch:before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+.generalInfo .userInfo .toggle-box:checked + .toggle-switch:before {
+  left: 62px;
+}
+
+@media (max-width: 767px) {
+  .generalInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+  .generalInfo .profilePic {
+    border: none;
+  }
+  .generalInfo .userInfo .toggle-switch {
+    margin: auto;
+  }
+}
+/* End General Info */
+
+/* Start Skill-active */
+
+/* .skill-active .skills {
+  flex-grow: 1;
+} */
+.skill-active .skills div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 991px) {
+  .skill-active {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .skill-active .activites {
+    margin-left: 0;
+  }
+}
+.skill-active .skills span {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: #eee;
+  margin: 10px;
+}
+
+/* .skill-active .activites {
+  flex-grow: 2;
+} */
+.skill-active .activity img {
+  width: 64px;
+  height: 64px;
+}
+.skill-active .activity div:last-of-type {
+  margin-left: auto;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .skill-active .activity img {
+    width: 44px;
+    height: 44px;
+  }
+  .skill-active .activity div {
+    font-size: 14px;
+  }
+  .skill-active .activity div span {
+    margin-top: 5px;
+  }
+}
+/* End Skill-active */
