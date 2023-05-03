@@ -74,3 +74,13 @@
     top: 50%;
   }
 }
+
+@media (max-width: 767px) {
+  #files {
+    flex-direction: column-reverse;
+  }
+  #files .files-data,
+  #files .file-stats {
+    width: 100%;
+  }
+}

@@ -87,7 +87,14 @@
   background-color: #eee;
   margin: 10px;
 }
-
+@media (max-width: 767px) {
+  .skill-active .skills span {
+    font-size: 14px;
+  }
+  .skill-active .activites .title {
+    font-size: 15px;
+  }
+}
 /* .skill-active .activites {
   flex-grow: 2;
 } */

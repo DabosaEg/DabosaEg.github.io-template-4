@@ -37,3 +37,21 @@
   margin-left: auto;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  #plans-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  #plans-data .plan .plan-name .price {
+    font-size: 32px;
+  }
+  #plans-data .plan .plan-name .price span {
+    font-size: 22px;
+  }
+  #plans-data .plan ul li span {
+    font-size: 13px;
+  }
+  #plans-data .plan p {
+    font-size: 15px;
+  }
+}

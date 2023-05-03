@@ -85,3 +85,21 @@
   /* var(--background) is not color but to be changed later using JS file */
   background-color: var(--background);
 }
+@media (max-width: 767px) {
+  #projects-data {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #projects-data .project .pro-work {
+    flex-direction: column;
+    align-items: start;
+  }
+  #projects-data .project .pro-status::before {
+    width: 180px;
+  }
+  #projects-data .project .pro-status::after {
+    width: calc((180px * 80) / 100);
+  }
+}

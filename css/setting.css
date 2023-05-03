@@ -30,6 +30,15 @@
   border-bottom: 1px solid #eee;
 }
 
+@media (max-width: 767px) {
+  #setting-data .securityInfo h4 {
+    font-size: 15px;
+  }
+  #setting-data .securityInfo a {
+    font-size: 14px;
+  }
+}
+
 /* End Security Info */
 
 /* Start Social Info */
@@ -114,6 +123,17 @@
   transform: scale(1);
 }
 
+@media (max-width: 767px) {
+  #setting-data .widgetControl div {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  #setting-data .widgetControl label::before {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 /* End Widget Control */
 
 /* Start Backup Manager */
@@ -170,6 +190,20 @@
   transition: 0.3s;
 }
 @media (max-width: 767px) {
+  #setting-data .backup .plan {
+    font-size: 14px;
+  }
+  #setting-data .backup .plan label {
+    padding-left: 24px;
+  }
+  #setting-data .backup .plan label::before {
+    width: 16px;
+    height: 16px;
+  }
+  #setting-data .backup .plan label::after {
+    width: 12px;
+    height: 12px;
+  }
   #setting-data .backup .servers {
     flex-direction: column;
     margin-bottom: 0;

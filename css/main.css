@@ -394,11 +394,26 @@ ul {
 #content-data .latestTasks .task i.done {
   opacity: 0.3;
 }
+
+@media (max-width: 767px) {
+  #content-data .latestTasks .task {
+    font-size: 14px;
+  }
+  #content-data .latestTasks .task p {
+    white-space: normal;
+  }
+}
 /* End  Latest Tasks*/
 
 /* Start Latest Uploads */
 #content-data .uploads:not(:last-of-type) {
   border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  #content-data .uploads span {
+    font-size: 14px;
+  }
 }
 /* End Latest Uploads */
 
@@ -438,12 +453,6 @@ ul {
 }
 #content-data .lastProject ul li.progress::before {
   animation: flashing 1s ease-in-out 0s infinite alternate forwards;
-  /* animation-name: flashing;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  animation-direction: alternate; */
 }
 @keyframes flashing {
   50% {
@@ -463,6 +472,17 @@ ul {
 @media (max-width: 767px) {
   #content-data .lastProject .img {
     display: none;
+  }
+  #content-data .lastProject ul::before {
+    left: 3px;
+  }
+  #content-data .lastProject ul li {
+    font-size: 14px;
+    margin-left: 25px;
+  }
+  #content-data .lastProject ul li::before {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -529,6 +549,10 @@ ul {
 @media (max-width: 767px) {
   #content-data .latestPost .text p {
     text-align: center;
+    font-size: 14px;
+  }
+  #content-data .latestPost .media div {
+    font-size: 14px;
   }
 }
 /* End Latest Post */
@@ -550,6 +574,22 @@ ul {
   height: 100%;
   transition: 0.3s;
 }
+
+@media (max-width: 767px) {
+  #content-data .socialMedia .media {
+    padding-left: 50px;
+    min-height: 30px;
+  }
+  #content-data .socialMedia .media i {
+    width: 30px;
+    font-size: 16px;
+  }
+  #content-data .socialMedia .media span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
 #content-data .socialMedia .media i:hover {
   transform: rotate(5deg);
 }
@@ -635,6 +675,15 @@ ul {
   font-size: 15px;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  #content-data .projects table {
+    min-width: 750px;
+  }
+  #content-data .projects table td {
+    font-size: 13px;
+  }
+}
 #content-data .projects thead td {
   font-weight: bold;
   background-color: #eee;
@@ -677,6 +726,12 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .upBtn {
+    font-size: 12px;
+  }
 }
 .upBtn.show {
   bottom: 10px;
