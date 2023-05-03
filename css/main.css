@@ -490,50 +490,42 @@ ul {
 
 /* Start Reminders */
 
-#content-data .reminders .reminder:not(:last-of-type) {
-  margin-bottom: 20px;
+#content-data .reminders ul li .key {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+#content-data .reminders ul li div {
 }
 
-#content-data .reminders .rem {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-}
-#content-data .reminders .rem::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#content-data .reminders .blue {
-  border-right: 2px solid var(--blue-color);
-}
-#content-data .reminders .blue::before {
+#content-data .reminders ul .blue .key {
   background-color: var(--blue-color);
 }
-#content-data .reminders .green {
-  border-right: 2px solid var(--green-color);
+#content-data .reminders ul .blue div {
+  border-left: 3px solid var(--blue-color);
 }
-#content-data .reminders .green::before {
+
+#content-data .reminders ul .green .key {
   background-color: var(--green-color);
 }
-#content-data .reminders .orange {
-  border-right: 2px solid var(--orange-color);
+#content-data .reminders ul .green div {
+  border-left: 3px solid var(--green-color);
 }
-#content-data .reminders .orange::before {
+
+#content-data .reminders ul .orange .key {
   background-color: var(--orange-color);
 }
-#content-data .reminders .red {
-  border-right: 2px solid var(--red-color);
+#content-data .reminders ul .orange div {
+  border-left: 3px solid var(--orange-color);
 }
-#content-data .reminders .red::before {
+
+#content-data .reminders ul .red .key {
   background-color: var(--red-color);
 }
+#content-data .reminders ul .red div {
+  border-left: 3px solid var(--red-color);
+}
+
 /* End Reminders */
 
 /* Start Latest Post */

@@ -128,7 +128,8 @@
     margin-bottom: 15px;
     font-size: 14px;
   }
-  #setting-data .widgetControl label::before {
+  #setting-data .widgetControl label::before,
+  #setting-data .widgetControl label::after {
     width: 14px;
     height: 14px;
   }
